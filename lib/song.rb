@@ -1,6 +1,8 @@
+require_relative '../lib/concerns/memorable'
 require 'pry'
 
 class Song
+  extend memorable
   attr_accessor :name
   attr_reader :artist
 
