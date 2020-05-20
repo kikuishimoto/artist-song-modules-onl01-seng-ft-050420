@@ -1,8 +1,10 @@
 require_relative '../lib/concerns/memorable'
+require_relative '../lib/concerns/paramable'
 require 'pry'
 
 class Artist
   extend Memorable
+  include Paramable
   attr_accessor :name
   attr_reader :songs
 
